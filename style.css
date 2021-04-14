@@ -1,0 +1,161 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: dodgerblue;
+  --select-color: dodgerblue;
+  --success: rgb(15, 158, 2);
+  --danger: rgb(214, 23, 23); 
+}
+
+body {
+  margin: 0;
+  font-family: cambria, sans-serif;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background: #e8e8e8;
+  align-items: center;
+}
+
+
+.game-container {
+  border: 1px solid black;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
+  height: 680px;
+  width: 530px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.5);
+  user-select: none;
+}
+
+.header {
+  background:var(--primary-color);
+  padding: 1px 16px;
+  color: white;
+  height: 100px;
+  letter-spacing: 2px;
+  font-size: 24px;
+  text-shadow: 1px 2px 2px black;
+  text-align: center;
+ justify-content: center;
+
+} 
+
+/* Splash Page */
+input[type="radio"] {
+  opacity: 0;
+  width: 100%;
+  height: 75px;
+  position: relative;
+  top: -40px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.selection-container {
+  position: relative;
+} 
+
+.radio-container {
+  width: 90%;
+  height: 75px;
+  margin: 25px;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+label {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+}
+
+.selected-label {
+  background: var(--select-color);
+  color: white;
+}
+
+.best-score {
+  position: relative;
+  top: -110px;
+  left: 300px;
+}
+
+.best-score span {
+  margin: 0;
+}
+
+.best-score span:last-child {
+  font-size: 24px;
+}
+
+
+.selected-label {
+  background: var(--select-color);
+  color: white;
+}
+
+h1 {
+  margin-top: 15px;
+}
+
+.card {
+padding: 13px;
+}
+
+.radio-container {
+  border: 1px solid black;
+  padding: 8px;
+  margin-bottom: 17px;
+  font: 12px;
+  justify-content: space-between;
+}
+
+
+span best-score {
+  /* justify-content: space-between; */
+  display: flex;
+}
+
+.selection-footer {
+  position: absolute;
+  background: black;
+  width: 98px;
+  height: 53px;
+  bottom: 0;
+  z-index: 4;
+}
+
+button {
+  bottom: 0;
+  width: 50%;
+}
+
+.item-container {
+  height: 552px;
+  overflow-y: scroll;
+  position: relative;
+  /* margin-left: 12px; */
+  top: -4px;
+  -ms-overflow-style: none;
+}
+
+.item-container::-webkit-scrollbar {
+  display: none;
+}
+
+.item {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  height: 80px;
+  margin: 0 40px;
+  user-select: none;
+}
