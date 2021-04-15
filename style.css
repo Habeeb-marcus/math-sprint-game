@@ -27,7 +27,7 @@ body {
   border: 1px solid black;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
   height: 680px;
-  width: 530px;
+  width: 500px;
   position: relative;
   background: rgba(255, 255, 255, 0.5);
   user-select: none;
@@ -155,7 +155,28 @@ button {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  height: 80px;
-  margin: 0 40px;
+  height: 70px;
+  margin: 0 23px;
   user-select: none;
 }
+
+.item-footer {
+  background: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  height: 57px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-footer button {
+  height: 75%;
+  width: 34%;
+  margin: 12px;
+  border-radius: 2px;
+  /* border: 1px 2px 2px black;  */
+}
+
